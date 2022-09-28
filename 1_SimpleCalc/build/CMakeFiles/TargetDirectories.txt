@@ -1,0 +1,3 @@
+/home/jeremiah/Documents/calcproject/1_SimpleCalc/build/CMakeFiles/simplecalc.dir
+/home/jeremiah/Documents/calcproject/1_SimpleCalc/build/CMakeFiles/edit_cache.dir
+/home/jeremiah/Documents/calcproject/1_SimpleCalc/build/CMakeFiles/rebuild_cache.dir

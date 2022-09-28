@@ -1,0 +1,1 @@
+/usr/bin/cc -g CMakeFiles/test_list.dir/tests/linked_list_tests.c.o -o test_list  -Wl,-rpath,/home/jeremiah/Documents/calcproject/build/3_DataStructures1 liblinked_list.so -lcunit 

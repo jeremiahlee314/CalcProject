@@ -1,0 +1,277 @@
+Start testing: Sep 28 14:38 EDT
+----------------------------------------------------------
+1/4 Testing: TestSimpleCalc
+1/4 Test: TestSimpleCalc
+Command: "/usr/bin/bash" "/home/jeremiah/Documents/calcproject/local_tester.sh" "1_SimpleCalc"
+Directory: /home/jeremiah/Documents/calcproject
+"TestSimpleCalc" start time: Sep 28 14:38 EDT
+Output:
+----------------------------------------------------------
+Start clang-tidy Check
+No output here is good
+Ignore "database" errors for now
+1 warning generated.
+Suppressed 1 warnings (1 with check filters).
+End clang-tidy Check
+Clang-Tidy found 2 warnings.
+cat: ../clanglog.txt: No such file or directory
+/home/jeremiah/Documents/calcproject
+
+Passed 31 out of 31 
+Removing Build Artifacts
+<end of output>
+Test time =   0.20 sec
+----------------------------------------------------------
+Test Passed.
+"TestSimpleCalc" end time: Sep 28 14:38 EDT
+"TestSimpleCalc" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/4 Testing: TestFileCalc
+2/4 Test: TestFileCalc
+Command: "/usr/bin/bash" "/home/jeremiah/Documents/calcproject/local_tester.sh" "2_FileCalc"
+Directory: /home/jeremiah/Documents/calcproject
+"TestFileCalc" start time: Sep 28 14:38 EDT
+Output:
+----------------------------------------------------------
+Start clang-tidy Check
+No output here is good
+Ignore "database" errors for now
+7 warnings generated.
+/home/jeremiah/Documents/calcproject/2_FileCalc/src/filecalc.c:208:17: warning: Call to function 'strcat' is insecure as it does not provide bounding of the memory buffer. Replace unbounded copy functions with analogous functions that support length arguments such as 'strlcat'. CWE-119 [clang-analyzer-security.insecureAPI.strcpy]
+                strcat(spath, sdirname);
+                ^~~~~~
+/home/jeremiah/Documents/calcproject/2_FileCalc/src/filecalc.c:208:17: note: Call to function 'strcat' is insecure as it does not provide bounding of the memory buffer. Replace unbounded copy functions with analogous functions that support length arguments such as 'strlcat'. CWE-119
+                strcat(spath, sdirname);
+                ^~~~~~
+/home/jeremiah/Documents/calcproject/2_FileCalc/src/filecalc.c:209:17: warning: Call to function 'strcat' is insecure as it does not provide bounding of the memory buffer. Replace unbounded copy functions with analogous functions that support length arguments such as 'strlcat'. CWE-119 [clang-analyzer-security.insecureAPI.strcpy]
+                strcat(upath, dirname);
+                ^~~~~~
+/home/jeremiah/Documents/calcproject/2_FileCalc/src/filecalc.c:209:17: note: Call to function 'strcat' is insecure as it does not provide bounding of the memory buffer. Replace unbounded copy functions with analogous functions that support length arguments such as 'strlcat'. CWE-119
+                strcat(upath, dirname);
+                ^~~~~~
+/home/jeremiah/Documents/calcproject/2_FileCalc/src/filecalc.c:210:17: warning: Call to function 'strcat' is insecure as it does not provide bounding of the memory buffer. Replace unbounded copy functions with analogous functions that support length arguments such as 'strlcat'. CWE-119 [clang-analyzer-security.insecureAPI.strcpy]
+                strcat(upath, "/");
+                ^~~~~~
+/home/jeremiah/Documents/calcproject/2_FileCalc/src/filecalc.c:210:17: note: Call to function 'strcat' is insecure as it does not provide bounding of the memory buffer. Replace unbounded copy functions with analogous functions that support length arguments such as 'strlcat'. CWE-119
+                strcat(upath, "/");
+                ^~~~~~
+/home/jeremiah/Documents/calcproject/2_FileCalc/src/filecalc.c:211:17: warning: Call to function 'strcat' is insecure as it does not provide bounding of the memory buffer. Replace unbounded copy functions with analogous functions that support length arguments such as 'strlcat'. CWE-119 [clang-analyzer-security.insecureAPI.strcpy]
+                strcat(spath, "/");
+                ^~~~~~
+/home/jeremiah/Documents/calcproject/2_FileCalc/src/filecalc.c:211:17: note: Call to function 'strcat' is insecure as it does not provide bounding of the memory buffer. Replace unbounded copy functions with analogous functions that support length arguments such as 'strlcat'. CWE-119
+                strcat(spath, "/");
+                ^~~~~~
+/home/jeremiah/Documents/calcproject/2_FileCalc/src/filecalc.c:212:17: warning: Call to function 'strcat' is insecure as it does not provide bounding of the memory buffer. Replace unbounded copy functions with analogous functions that support length arguments such as 'strlcat'. CWE-119 [clang-analyzer-security.insecureAPI.strcpy]
+                strcat(upath, entry->d_name);
+                ^~~~~~
+/home/jeremiah/Documents/calcproject/2_FileCalc/src/filecalc.c:212:17: note: Call to function 'strcat' is insecure as it does not provide bounding of the memory buffer. Replace unbounded copy functions with analogous functions that support length arguments such as 'strlcat'. CWE-119
+                strcat(upath, entry->d_name);
+                ^~~~~~
+/home/jeremiah/Documents/calcproject/2_FileCalc/src/filecalc.c:213:17: warning: Call to function 'strcat' is insecure as it does not provide bounding of the memory buffer. Replace unbounded copy functions with analogous functions that support length arguments such as 'strlcat'. CWE-119 [clang-analyzer-security.insecureAPI.strcpy]
+                strcat(spath, entry->d_name);
+                ^~~~~~
+/home/jeremiah/Documents/calcproject/2_FileCalc/src/filecalc.c:213:17: note: Call to function 'strcat' is insecure as it does not provide bounding of the memory buffer. Replace unbounded copy functions with analogous functions that support length arguments such as 'strlcat'. CWE-119
+                strcat(spath, entry->d_name);
+                ^~~~~~
+Suppressed 1 warnings (1 with check filters).
+End clang-tidy Check
+Clang-Tidy found 8 warnings.
+cat: ../clanglog.txt: No such file or directory
+/home/jeremiah/Documents/calcproject
+Generating 16 files with 64 equations
+Test Results: Passed 16 out of 16 tests.
+Removing Build Artifacts
+<end of output>
+Test time =   0.28 sec
+----------------------------------------------------------
+Test Passed.
+"TestFileCalc" end time: Sep 28 14:38 EDT
+"TestFileCalc" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/4 Testing: TestDataStructures1
+3/4 Test: TestDataStructures1
+Command: "/usr/bin/bash" "/home/jeremiah/Documents/calcproject/local_tester.sh" "3_DataStructures1"
+Directory: /home/jeremiah/Documents/calcproject
+"TestDataStructures1" start time: Sep 28 14:38 EDT
+Output:
+----------------------------------------------------------
+Start clang-tidy Check
+No output here is good
+Ignore "database" errors for now
+Suppressed 2 warnings (2 NOLINT).
+Suppressed 2 warnings (2 NOLINT).
+1 warning generated.
+/home/jeremiah/Documents/calcproject/3_DataStructures1/tests/hash_table_tests.c:85:5: warning: Value stored to 'return_ptr' is never read [clang-analyzer-deadcode.DeadStores]
+    return_ptr = hash_table_lookup(hash_table, test_key);
+    ^            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/jeremiah/Documents/calcproject/3_DataStructures1/tests/hash_table_tests.c:85:5: note: Value stored to 'return_ptr' is never read
+    return_ptr = hash_table_lookup(hash_table, test_key);
+    ^            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Suppressed 1 warnings (1 NOLINT).
+Suppressed 8 warnings (8 NOLINT).
+Suppressed 2 warnings (2 NOLINT).
+1 warning generated.
+Suppressed 1 warnings (1 with check filters).
+1 warning generated.
+/home/jeremiah/Documents/calcproject/3_DataStructures1/src/queue_p.c:57:18: warning: Result of 'calloc' is converted to a pointer of type 'queue_p_node_t *', which is incompatible with sizeof operand type 'struct queue_node_p_t *' [clang-analyzer-unix.MallocSizeof]
+    queue->arr = calloc(capacity, sizeof(struct queue_node_p_t *));
+                 ^~~~~~           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/jeremiah/Documents/calcproject/3_DataStructures1/src/queue_p.c:57:18: note: Result of 'calloc' is converted to a pointer of type 'queue_p_node_t *', which is incompatible with sizeof operand type 'struct queue_node_p_t *'
+    queue->arr = calloc(capacity, sizeof(struct queue_node_p_t *));
+                 ^~~~~~           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+5 warnings generated.
+/home/jeremiah/Documents/calcproject/3_DataStructures1/src/linked_list.c:367:22: warning: Value stored to 'travnode' during its initialization is never read [clang-analyzer-deadcode.DeadStores]
+        list_node_t *travnode = list->head;
+                     ^~~~~~~~   ~~~~~~~~~~
+/home/jeremiah/Documents/calcproject/3_DataStructures1/src/linked_list.c:367:22: note: Value stored to 'travnode' during its initialization is never read
+        list_node_t *travnode = list->head;
+                     ^~~~~~~~   ~~~~~~~~~~
+/home/jeremiah/Documents/calcproject/3_DataStructures1/src/linked_list.c:368:22: warning: Value stored to 'nexttrav' during its initialization is never read [clang-analyzer-deadcode.DeadStores]
+        list_node_t *nexttrav = list->head->next;
+                     ^~~~~~~~   ~~~~~~~~~~~~~~~~
+/home/jeremiah/Documents/calcproject/3_DataStructures1/src/linked_list.c:368:22: note: Value stored to 'nexttrav' during its initialization is never read
+        list_node_t *nexttrav = list->head->next;
+                     ^~~~~~~~   ~~~~~~~~~~~~~~~~
+/home/jeremiah/Documents/calcproject/3_DataStructures1/src/linked_list.c:408:21: warning: Value stored to 'travnode' is never read [clang-analyzer-deadcode.DeadStores]
+                    travnode = travnode->next;
+                    ^          ~~~~~~~~~~~~~~
+/home/jeremiah/Documents/calcproject/3_DataStructures1/src/linked_list.c:408:21: note: Value stored to 'travnode' is never read
+                    travnode = travnode->next;
+                    ^          ~~~~~~~~~~~~~~
+Suppressed 2 warnings (2 with check filters).
+End clang-tidy Check
+Clang-Tidy found 16 warnings.
+cat: ../clanglog.txt: No such file or directory
+/home/jeremiah/Documents/calcproject
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/jeremiah/Documents/calcproject/3_DataStructures1/build
+make[1]: Entering directory '/home/jeremiah/Documents/calcproject/3_DataStructures1/build'
+make[2]: Entering directory '/home/jeremiah/Documents/calcproject/3_DataStructures1/build'
+make[3]: Entering directory '/home/jeremiah/Documents/calcproject/3_DataStructures1/build'
+make[3]: Entering directory '/home/jeremiah/Documents/calcproject/3_DataStructures1/build'
+make[3]: Entering directory '/home/jeremiah/Documents/calcproject/3_DataStructures1/build'
+make[3]: Entering directory '/home/jeremiah/Documents/calcproject/3_DataStructures1/build'
+make[3]: Entering directory '/home/jeremiah/Documents/calcproject/3_DataStructures1/build'
+[35m[1mConsolidate compiler generated dependencies of target linked_list[0m
+[35m[1mConsolidate compiler generated dependencies of target queue_p[0m
+[35m[1mConsolidate compiler generated dependencies of target stack[0m
+make[3]: Leaving directory '/home/jeremiah/Documents/calcproject/3_DataStructures1/build'
+make[3]: Leaving directory '/home/jeremiah/Documents/calcproject/3_DataStructures1/build'
+make[3]: Leaving directory '/home/jeremiah/Documents/calcproject/3_DataStructures1/build'
+[35m[1mConsolidate compiler generated dependencies of target hash_table[0m
+[35m[1mConsolidate compiler generated dependencies of target queue[0m
+make[3]: Leaving directory '/home/jeremiah/Documents/calcproject/3_DataStructures1/build'
+make[3]: Leaving directory '/home/jeremiah/Documents/calcproject/3_DataStructures1/build'
+[ 25%] Built target stack
+[ 25%] Built target linked_list
+[ 30%] Built target queue_p
+make[3]: Entering directory '/home/jeremiah/Documents/calcproject/3_DataStructures1/build'
+make[3]: Entering directory '/home/jeremiah/Documents/calcproject/3_DataStructures1/build'
+make[3]: Entering directory '/home/jeremiah/Documents/calcproject/3_DataStructures1/build'
+[ 40%] Built target hash_table
+[ 50%] Built target queue
+make[3]: Entering directory '/home/jeremiah/Documents/calcproject/3_DataStructures1/build'
+make[3]: Entering directory '/home/jeremiah/Documents/calcproject/3_DataStructures1/build'
+[35m[1mConsolidate compiler generated dependencies of target test_queue_p[0m
+[35m[1mConsolidate compiler generated dependencies of target test_stack[0m
+[35m[1mConsolidate compiler generated dependencies of target test_list[0m
+make[3]: Leaving directory '/home/jeremiah/Documents/calcproject/3_DataStructures1/build'
+make[3]: Leaving directory '/home/jeremiah/Documents/calcproject/3_DataStructures1/build'
+make[3]: Leaving directory '/home/jeremiah/Documents/calcproject/3_DataStructures1/build'
+[35m[1mConsolidate compiler generated dependencies of target test_queue[0m
+make[3]: Leaving directory '/home/jeremiah/Documents/calcproject/3_DataStructures1/build'
+[35m[1mConsolidate compiler generated dependencies of target test_table[0m
+make[3]: Leaving directory '/home/jeremiah/Documents/calcproject/3_DataStructures1/build'
+[ 60%] Built target test_queue_p
+[ 70%] Built target test_stack
+[ 80%] Built target test_list
+[ 90%] Built target test_queue
+[100%] Built target test_table
+make[2]: Leaving directory '/home/jeremiah/Documents/calcproject/3_DataStructures1/build'
+make[1]: Leaving directory '/home/jeremiah/Documents/calcproject/3_DataStructures1/build'
+
+Passed 5 out of 5 
+Removing Build Artifacts
+<end of output>
+Test time =   3.02 sec
+----------------------------------------------------------
+Test Passed.
+"TestDataStructures1" end time: Sep 28 14:38 EDT
+"TestDataStructures1" time elapsed: 00:00:03
+----------------------------------------------------------
+
+4/4 Testing: TestThreadCalc
+4/4 Test: TestThreadCalc
+Command: "/usr/bin/bash" "/home/jeremiah/Documents/calcproject/local_tester.sh" "4_ThreadCalc"
+Directory: /home/jeremiah/Documents/calcproject
+"TestThreadCalc" start time: Sep 28 14:38 EDT
+Output:
+----------------------------------------------------------
+Start clang-tidy Check
+No output here is good
+Ignore "database" errors for now
+2 warnings generated.
+/home/jeremiah/Documents/calcproject/4_ThreadCalc/src/threadcalc.c:173:17: warning: Call to function 'strcpy' is insecure as it does not provide bounding of the memory buffer. Replace unbounded copy functions with analogous functions that support length arguments such as 'strlcpy'. CWE-119 [clang-analyzer-security.insecureAPI.strcpy]
+                strcpy(p_dname, entry->d_name);
+                ^~~~~~
+/home/jeremiah/Documents/calcproject/4_ThreadCalc/src/threadcalc.c:173:17: note: Call to function 'strcpy' is insecure as it does not provide bounding of the memory buffer. Replace unbounded copy functions with analogous functions that support length arguments such as 'strlcpy'. CWE-119
+                strcpy(p_dname, entry->d_name);
+                ^~~~~~
+Suppressed 1 warnings (1 with check filters).
+1 warning generated.
+/home/jeremiah/Documents/calcproject/4_ThreadCalc/src/threadpool.c:48:12: warning: Potential leak of memory pointed to by 'threadpool' [clang-analyzer-unix.Malloc]
+    return NULL;
+           ^
+/usr/lib/llvm-14/lib/clang/14.0.0/include/stddef.h:89:24: note: expanded from macro 'NULL'
+#  define NULL ((void*)0)
+                       ^
+/home/jeremiah/Documents/calcproject/4_ThreadCalc/src/threadpool.c:21:32: note: Memory is allocated
+    threadpool_t *threadpool = calloc(1, sizeof(struct threadpool_t));
+                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/jeremiah/Documents/calcproject/4_ThreadCalc/src/threadpool.c:22:9: note: Assuming 'threadpool' is not equal to NULL
+    if (NULL != threadpool && NULL != queue)
+        ^
+/usr/lib/llvm-14/lib/clang/14.0.0/include/stddef.h:89:16: note: expanded from macro 'NULL'
+#  define NULL ((void*)0)
+               ^
+/home/jeremiah/Documents/calcproject/4_ThreadCalc/src/threadpool.c:22:9: note: Left side of '&&' is true
+    if (NULL != threadpool && NULL != queue)
+        ^
+/usr/lib/llvm-14/lib/clang/14.0.0/include/stddef.h:89:16: note: expanded from macro 'NULL'
+#  define NULL ((void*)0)
+               ^
+/home/jeremiah/Documents/calcproject/4_ThreadCalc/src/threadpool.c:22:31: note: Assuming 'queue' is equal to NULL
+    if (NULL != threadpool && NULL != queue)
+                              ^
+/usr/lib/llvm-14/lib/clang/14.0.0/include/stddef.h:89:16: note: expanded from macro 'NULL'
+#  define NULL ((void*)0)
+               ^
+/home/jeremiah/Documents/calcproject/4_ThreadCalc/src/threadpool.c:22:5: note: Taking false branch
+    if (NULL != threadpool && NULL != queue)
+    ^
+/home/jeremiah/Documents/calcproject/4_ThreadCalc/src/threadpool.c:48:12: note: Potential leak of memory pointed to by 'threadpool'
+    return NULL;
+           ^
+/usr/lib/llvm-14/lib/clang/14.0.0/include/stddef.h:89:24: note: expanded from macro 'NULL'
+#  define NULL ((void*)0)
+                       ^
+End clang-tidy Check
+Clang-Tidy found 5 warnings.
+cat: ../clanglog.txt: No such file or directory
+/home/jeremiah/Documents/calcproject
+sh: 1: ../build/4_ThreadCalc/threadcalc: not found
+Generating 16 files with 64 equations
+Test Results: Passed 0 out of 16 tests.
+Removing Build Artifacts
+<end of output>
+Test time =   0.56 sec
+----------------------------------------------------------
+Test Passed.
+"TestThreadCalc" end time: Sep 28 14:38 EDT
+"TestThreadCalc" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Sep 28 14:38 EDT

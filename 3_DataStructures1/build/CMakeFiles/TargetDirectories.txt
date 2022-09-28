@@ -1,0 +1,12 @@
+/home/jeremiah/Documents/calcproject/3_DataStructures1/build/CMakeFiles/linked_list.dir
+/home/jeremiah/Documents/calcproject/3_DataStructures1/build/CMakeFiles/test_list.dir
+/home/jeremiah/Documents/calcproject/3_DataStructures1/build/CMakeFiles/hash_table.dir
+/home/jeremiah/Documents/calcproject/3_DataStructures1/build/CMakeFiles/test_table.dir
+/home/jeremiah/Documents/calcproject/3_DataStructures1/build/CMakeFiles/stack.dir
+/home/jeremiah/Documents/calcproject/3_DataStructures1/build/CMakeFiles/test_stack.dir
+/home/jeremiah/Documents/calcproject/3_DataStructures1/build/CMakeFiles/queue.dir
+/home/jeremiah/Documents/calcproject/3_DataStructures1/build/CMakeFiles/test_queue.dir
+/home/jeremiah/Documents/calcproject/3_DataStructures1/build/CMakeFiles/queue_p.dir
+/home/jeremiah/Documents/calcproject/3_DataStructures1/build/CMakeFiles/test_queue_p.dir
+/home/jeremiah/Documents/calcproject/3_DataStructures1/build/CMakeFiles/edit_cache.dir
+/home/jeremiah/Documents/calcproject/3_DataStructures1/build/CMakeFiles/rebuild_cache.dir
